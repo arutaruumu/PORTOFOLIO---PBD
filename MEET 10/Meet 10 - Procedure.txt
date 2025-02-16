@@ -1,0 +1,5 @@
+1. Buat sebuah stored procedure (sp) dengan nama sp_products_limit_3! Sp ini tidak memiliki parameter input, sp ini berisi perintah untuk menampilkan data dari tabel products, data yang ditampilkan adalah keseluruhan kolom dan 3 buah baris data teratas saja. Eksekusi sp_products_limit_3! Tuliskan kode eksekusinya, dan screenshoot hasil eksekusi sp tersebut.
+2. Apakah bisa jika jumlah baris yang dibatasi, batasannya dinamis (sesuai nilai input). Buktikan dengan membuat procedure baru, dengan 1 buah parameter saja.
+3. Buah sebuah sp dengan nama sp_insert_new_concerns. sp ini menerima satu buah parameter dengan nama: name, tipe data varchar(20); ketika sp dieksekusi, maka akan ada tambahan satu baris data baru di tabel concern, dengan nilai sesuai input yang dimasukkan saat sp dieksekusi.
+Contoh eksekusi: call sp_insert_new_concerns(“dark under eye”)
+4. Mirip dengan sp nomor 3, di bagian body procedure, tambahkan aturan: jika panjang teks pada parameter name, kurang dari 20, maka INSERT terjadi. Jika > 20 maka INSERT digagalkan. 
